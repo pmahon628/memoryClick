@@ -1,18 +1,14 @@
 import React from "react";
-import "./style.css";
+import "./bcard.css";
 
 function BandCard(props){
-    return(
-     <div className="Card">
+    return (
+     <div className="Card bandCard-wrapper">
        <div className="img-container">
-         <div className="row">
-         <div className="col">
          <img alt={props.name} src={props.image} />
-          </div>
+         </div>
           <div className="content">
-          </div>
-          <div className="col">
-           <ul>
+            <ul>
                <li>
                    <strong>Name:</strong>{props.name}
                    </li>
@@ -21,12 +17,10 @@ function BandCard(props){
                 </li>
            </ul>
            </div>
-          </div>
-          </div>
-            <span onClick={() => props.removeFriends(props.id)} className="remove">x
+             <span onClick={() => props.removeFriends(props.id)} className="remove">    
+             x
             </span>
-        </div>
+            </div>
         );
-};
-
+}
 export default BandCard;
