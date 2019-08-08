@@ -3,24 +3,15 @@ import "./bcard.css";
 
 function BandCard(props){
     return (
-     <div className="Card bandCard-wrapper">
+     <div className="Card bandCard">
        <div className="img-container">
-         <img alt={props.name} src={props.image} />
-         </div>
-          <div className="content">
-            <ul>
-               <li>
-                   <strong>Name:</strong>{props.name}
-                   </li>
-                <li>
-                    <strong>Genre:</strong>{props.genre}
-                </li>
-           </ul>
-           </div>
-             <span onClick={() => props.removeFriends(props.id)} className="remove">    
-             x
-            </span>
-            </div>
+        <div className="col-md-3">
+       <img alt={props.name}  src={props.image} id={props.id} />
+      </div>
+        </div>
+        </div>
+       
         );
 }
+
 export default BandCard;

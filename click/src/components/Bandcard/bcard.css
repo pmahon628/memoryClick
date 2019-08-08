@@ -1,13 +1,8 @@
-.bandCard-wrapper {
-    background: white;
-    border-radius: 3px;
-    height: 300px;
-    margin: 5px;
-    position: relative;
-    width: 300 px;
-    text-align: center
+.bandCard  {
+  display: grid | inline-grid;
 }
-.img-container {
+
+  .img-container {
    text-align: center
 }
 
@@ -21,26 +16,5 @@
     font-size: 15px;
   }
   
-  ul {
-    list-style-type: none;
-    text-align: center;  
-}
-  
-  li {
-    margin-top: 18px;
-    text-align: center;
-  }
-  
-  .remove {
-    color: #ff1744;
-    font-size: 48px;
-    position: absolute;
-    top: -20px;
-    right: 5px;
-    cursor: pointer;
-  }
-  
-  .remove:hover {
-    color: #d50000;
-  }
+ 
   
