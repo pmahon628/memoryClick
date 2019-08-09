@@ -1,5 +1,5 @@
 import React from "react";
-import "./title.css";
+import "./click.css";
 
 const Bands = props => (
   <div className="card img-container hover">

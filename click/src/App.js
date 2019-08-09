@@ -2,7 +2,8 @@ import React, { Component} from "react";
 import BandCard from "./components/Bandcard/bcard";
 import bands from "./bands.json";
 import Wrapper from "./components/Wrapper/wrapper";
-// import Click from "./components/Click/click";
+import Click from "./components/Click/click";
+import Score from  "./components/Score/score";
 
 
 class App extends Component {
@@ -39,15 +40,19 @@ class App extends Component {
 
   render(){
     return(
+      <div className="container-fluid">
       <div className="App">
       <header className="App-Header">
+      <div className="row">
       <h1 className="App-title">Band Memory Click Game</h1>
-      </header>
       <Score total={this.state.score}
           goal={12}
           status={this.state.status}
         />
+        </div>
+      </header>
       <Wrapper>
+        <div className="row">
         <title>Bands List</title>
         {this.state.bands.map(bands =>(
           <BandCard
@@ -55,9 +60,12 @@ class App extends Component {
             id={bands.id}
             image={bands.image}
             />
-        ))}
-      </Wrapper>
+            ))}
+            </div>
+     </Wrapper>
+        </div>
       </div>
+      
     );
   }
 }
