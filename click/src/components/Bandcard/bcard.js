@@ -10,8 +10,11 @@ function BandCard(props){
       </div>
         </div>
         </div>
-       
-        );
+        <span onClick={() => props.shuffleBand(props.id)} className="remove">
+        𝘅
+      </span>
+    )
 }
+
 
 export default BandCard;

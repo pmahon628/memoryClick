@@ -7,14 +7,15 @@ import Score from  "./components/Score/score";
 
 
 class App extends Component {
-  state ={
+  state = {
     bands,
     selectedBandIds: [],
     score: 0,
     goal: 12,
     status: ""
-  }
-  
+  };
+
+ 
   shuffleBands = id => {
     let selectedBandIds = this.state.selectedBandIds;
 
@@ -30,13 +31,15 @@ class App extends Component {
       }
 
       this.setState({ bands, selectedBandIds, score: selectedBandIds.length, status: " " });
-
+    
       for (let i = bands.length - 1; i > 0; i--) {
         let j = Math.floor(Math.random() * (i + 1));
         [bands[i], bands[j]] = [bands[j], bands[i]];
+        
       }
     }
   }
+  
 
   render(){
     return(
@@ -44,11 +47,13 @@ class App extends Component {
       <div className="App">
       <header className="App-Header">
       <div className="row">
+      <div className="col-md-4">
       <h1 className="App-title">Band Memory Click Game</h1>
       <Score total={this.state.score}
           goal={12}
           status={this.state.status}
         />
+        </div>
         </div>
       </header>
       <Wrapper>
