@@ -27,13 +27,27 @@ class App extends Component {
           this.setState({score: this.state.score +1}, function(){
             console.log(this.state.score);
           });
-          this.state.cards.sort(() => Math.random() - 0.5)
+          this.state.bands.sort(() => Math.random() - 0.5)
           return true
         }else{
-          console.log("you lose");
+          this.gameOver();
         }
       }
     });
+  };
+
+  gameOver = () => {
+    if(this.state.score > this.state.highScore){
+      this.setState({highScore: this.state.score}, function(){
+        console.log(this.state.highScore);
+      });
+    }
+    this.state.bands.forEach(cards => {
+      cards.count =0;
+    });
+    alert('Game Over!  \nScore: '+ this.state.score);
+    this.setState({score: 0});
+    return true
   };
  
   // shuffleBands = id => {
