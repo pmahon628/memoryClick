@@ -42,8 +42,8 @@ class App extends Component {
         console.log(this.state.highScore);
       });
     }
-    this.state.bands.forEach(cards => {
-      cards.count =0;
+    this.state.bands.forEach(bands => {
+      bands.count =0;
     });
     alert('Game Over!  \nScore: '+ this.state.score);
     this.setState({score: 0});
