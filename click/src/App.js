@@ -45,7 +45,7 @@ class App extends Component {
     this.state.bands.forEach(bands => {
       bands.count =0;
     });
-    alert('Game Over!  \nScore: '+ this.state.score);
+    alert('You lose, try again!  \nScore: '+ this.state.score);
     this.setState({score: 0});
     return true
   };
