@@ -50,30 +50,6 @@ class App extends Component {
     return true
   };
  
-  // shuffleBands = id => {
-  //   let selectedBandIds = this.state.selectedBandIds;
-
-  //   if (selectedBandIds.includes(id)) {
-  //     this.setState({ selectedBandIds: [], score: 0, status: "Nah man, you lose!!" });
-  //     return;
-  //   } else {
-  //     selectedBandIds.push(id)
-
-  //     if (selectedBandIds.length === 12) {
-  //       this.setState({ score: 12, status: "Nice! You got it!!", selectedCharacterIds: [] });
-  //       return;
-  //     }
-
-  //     this.setState({ bands, selectedBandIds, score: selectedBandIds.length, status: " " });
-    
-  //     for (let i = bands.length - 1; i > 0; i--) {
-  //       let j = Math.floor(Math.random() * (i + 1));
-  //       [bands[i], bands[j]] = [bands[j], bands[i]];
-        
-  //     }
-  //   }
-  // }
-  
 
   render(){
     return(
@@ -83,6 +59,8 @@ class App extends Component {
       <div className="row">
       <div className="col-md-4">
       <h1 className="App-title">Band Memory Click Game</h1>
+      <h4>The object of the game is to not guess the same band twice.</h4>
+      <h5>Can you get to 12?? Best of luck.</h5>
       <Score total={this.state.score}
           goal={12}
           status={this.state.status}
@@ -98,6 +76,7 @@ class App extends Component {
             handleClickCount = {this.handleClickCount}
             id={bands.id}
             image={bands.image}
+            name={bands.name}
             />
             ))}
             </div>

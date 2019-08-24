@@ -1,8 +1,11 @@
 [
-    {
+    { 
+
         "id": 1,
-        "image": "./images/Zeppelin.jpg", 
+        "image": "./images/Zeppelin.jpg",
+        "name": "Led Zeppelin", 
         "selected": false
+       
     },  
      {
         "id": 2,
@@ -39,7 +42,7 @@
     },
     {
         "id": 8,
-        "image": "./images/kraughnbin.jpg",
+        "image": "./images/Kraughnbin.jpg",
         "selected": false   
     },
     {
@@ -49,17 +52,17 @@
     },
     {
         "id": 10,
-        "image": "./images/flecktones.jpg",
+        "image": "./images/Flecktones.jpg",
         "selected": false   
     },
     {
         "id": 11,
-        "image": "./images/modest.jpg",
+        "image": "./images/Modest.jpg",
         "selected": false   
     },
     {
         "id": 12,
-        "image": "./images/snarky.jpg",
+        "image": "./images/Snarky.jpg",
         "selected": false   
     }
 ]
