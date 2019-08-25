@@ -2,8 +2,7 @@
     { 
 
         "id": 1,
-        "image": "./images/Zeppelin.jpg",
-        "name": "Led Zeppelin", 
+        "image": "./images/Zeppelin.jpg", 
         "selected": false
        
     },  
