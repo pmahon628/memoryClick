@@ -3,7 +3,7 @@ import BandCard from "./components/Bandcard/bcard";
 import bands from "./bands.json";
 import Wrapper from "./components/Wrapper/wrapper";
 import Score from  "./components/Score/score";
-
+import "../src/App.css";
 
 class App extends Component {
   state = {
