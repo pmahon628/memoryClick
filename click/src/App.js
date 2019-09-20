@@ -16,13 +16,11 @@ class App extends Component {
 
    
   handleClickCount = id => {
-   
-    this.state.bands.find((data,i) => {
-      
-      if(data.id === id) {
-        
-        if(bands[i].count === 0){
-          bands[i].count = bands[i].count +1;
+      this.state.bands.find((data,i) => {
+       
+        if(data.id === id) {
+         if(bands[i].count === 0){
+            bands[i].count = bands[i].count +1;
         
           this.setState({score: this.state.score +1}, function(){
             console.log(this.state.score);
