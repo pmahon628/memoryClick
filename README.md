@@ -11,4 +11,4 @@ If you are interested in seeing how this game works, please follow these instruc
 2. Run npm -install
 3.  Once game opens:
   a: follow instructions - click pictures of the bands and do not guess the same one twice.
-  b: enjoy! 
+ Enjoy!
