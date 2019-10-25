@@ -2,66 +2,66 @@
     { 
 
         "id": 1,
-        "image": "./images/bands/Zeppelin.jpg", 
+        "image": "./images/movies/Airplane.jpg", 
         "selected": false
        
     },  
      {
         "id": 2,
-        "image": "./images/bands/Grateful.jpg",
+        "image": "./images/movies/Blazing.jpg",
         "selected": false
      },
 
      {
         "id": 3,
-        "image": "./images/bands/Rush.jpg",
+        "image": "./images/movies/Endgame.jpg",
         "selected": false 
     },
 
     {
       "id": 4,
-      "image": "./images/bands/Steely.jpg",
+      "image": "./images/movies/GetOut.jpg",
       "selected": false  
     },
     {
         "id": 5,
-        "image": "./images/bands/Paak.jpg",
+        "image": "./images/movies/HotRod.jpg",
         "selected": false 
     },
 
     {
         "id": 6,
-        "image": "./images/bands/Umphreys.jpg",
+        "image": "./images/movies/NakedGun.jpg",
         "selected": false
     },
     {
         "id": 7,
-        "image": "./images/bands/Zappa.jpg",
+        "image": "./images/movies/OtherGuys.jpg",
         "selected": false
     },
     {
         "id": 8,
-        "image": "./images/bands/Kraughnbin.jpg",
+        "image": "./images/movies/Patton.jpg",
         "selected": false   
     },
     {
         "id": 10,
-        "image": "./images/bands/Chromeo.jpg",
+        "image": "./images/movies/Popstar.jpg",
         "selected": false   
     },
     {
         "id": 10,
-        "image": "./images/bands/Flecktones.jpg",
+        "image": "./images/movies/Return.jpg",
         "selected": false   
     },
     {
         "id": 11,
-        "image": "./images/bands/Modest.jpg",
+        "image": "./images/movies/Town.jpg",
         "selected": false   
     },
     {
         "id": 12,
-        "image": "./images/bandsSnarky.jpg",
+        "image": "./images/movies/Tropic.jpg",
         "selected": false   
     }
 ]
