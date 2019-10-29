@@ -4,6 +4,7 @@ import bands from "./bands.json";
 import Wrapper from "./components/Wrapper/wrapper";
 import Score from  "./components/Score/score";
 import "../src/App.css";
+import Axios from "axios";
 
 class App extends Component {
   state = {
