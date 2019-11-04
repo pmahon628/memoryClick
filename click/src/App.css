@@ -1,6 +1,7 @@
 .col-md-4 {
     padding: 10px;
 }
+
  h1{
      padding: 10px;
      font-family: 'Turret Road', cursive;
@@ -9,5 +10,5 @@
 h4, h5 {
     font-family: 'Permanent Marker';
     padding: 10px;
-    background-color: gold;
+    /* background-color: gold; */
 }

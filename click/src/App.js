@@ -1,6 +1,8 @@
 import React, { Component} from "react";
 import BandCard from "./components/Bandcard/bcard";
-import bands from "./bands.json";
+import bands from "./public/bands.json";
+import movies from "./public/movies.json";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Wrapper from "./components/Wrapper/wrapper";
 import Score from  "./components/Score/score";
 import "../src/App.css";
@@ -53,6 +55,7 @@ class App extends Component {
   render(){
     return(
       <div className="container-fluid">
+      <nav />
       <div className="App">
       <header className="App-Header">
       <div className="row">

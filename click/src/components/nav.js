@@ -1,19 +1,18 @@
 import React, {Component} from "react";
 import { BrowserRouter as Router, Redirect } from "react-router-dom";
 
-// import Axios from "axios";
+import Axios from "axios";
 
 class pageNav extends Component {
-
-  return (
+  
+return (
   <Router>
     <ul>
-        </li>
+        <li>
         <li className="nav-item">
           
-          <a className="nav-link" href="/bands">Band Memory</a>
-          
-        </li>
+        <a className="nav-link" href="/bands">Band Memory</a>
+          </li>
         <li className="nav-item">
          
           <a className="nav-link" href="/movies">Movies Memory</a>
